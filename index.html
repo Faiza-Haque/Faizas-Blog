@@ -11,57 +11,52 @@
 
 <body>
     <header>
-        <nav class="navbar"> <h1>Faiza's Blog <span style='font-size:60px;'>&#127800;</span></h1> 
+        <nav class="navbar">
+            <h1>Faiza's Blog <span style='font-size:50px;'>&#127800;</span></h1>
             <div class="dark-mode-toggle"></div>
             <button id="dark-mode-toggle" class="dark-mode-toggle">click</button>
         </nav>
         <!--toggle-->
-        
+
     </header>
 
 
     <div class="main-div">
         <div class="left-content-div">
-            
-            
+
+
 
             <!--Left Section for User Input-->
+            <div class="left-content-div">
+                <div class="form-div"></div>
+                <form>
+                    <h2>What is on you're mind?</h2>
+                    <p>
+                        <label for="username">
+                            <span> Username </span>
+                            <strong><span aria-label="required"></span></strong>
+                        </label>
+                        <input type="text" id="username" name="username" required />
+                    </p>
+                    <p>
+                        <label for="title">
+                            <span> Title </span>
+                            <strong><span aria-label="required"></span></strong>
+                        </label>
+                        <input type="text" id="tite" name="title" required />
+                    </p>
+                    <p>
+                        <label for="content">
+                            <span> Content </span>
+                            <strong><span aria-label="required"></span></strong>
+                        </label>
+                        <textarea rows="10" cols="45" id="content" name="content" required></textarea>
+                    </p>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
             <div class="right-content-div">
-                <div class="form-div">
-                    <form>
-                        <h2>What is on you're Mind?</h2>
-                        <p>
-                            <label for="username">
-                                <span>Username: </span>
-                                <strong><span aria-label="required"></span></strong>
-                            </label>
-                            <input type="text" id="username" name="username" required />
-                        </p>
-                        <p>
-                            <label for="title">
-                                <span>Title </span>
-                                <strong><span aria-label="required"></span></strong>
-                            </label>
-                            <input type="text" id="tite" name="title" required />
-                        </p>
-                        <p>
-                            <label for="content">
-                                <span>Content </span>
-                                <strong><span aria-label="required"></span></strong>
-                            </label>
-                            <textarea rows="10" cols="45" id="content" name="content" required></textarea>
-                        </p>
-                        <input type="submit" value="Submit" id="submit">
-                    </form>
-                </div>
-
-
-
-                <!-- write all your code with your yellow circle and text or images-->
-              
-
-
-
+                <div class="circle"> </div>
 
                 <script src="./assets/js/logic.js"></script>
                 <script src="./assets/js/form.js"></script>

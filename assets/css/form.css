@@ -27,22 +27,15 @@ h1 {
 .main-div {
     display: flex;
     height: 85vh;
+
 }
+
 .left-content-div {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-right: black 2px solid;
-}
-
-
-.right-content-div {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: black 2px;
+    justify-content:center;
+    border-right:  black 2px solid;
     padding-left: 2%;
 }
 
@@ -53,3 +46,5 @@ h1 {
     justify-content: center;
     border-bottom: black 2px solid;
 }
+
+
