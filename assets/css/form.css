@@ -1,22 +1,55 @@
 .darkMode {
-background-color: rgb(29, 28, 28);
-
+    background-color: rgb(29, 28, 28);
 
 }
 
-body {background-color:  rgb(238, 204, 209);}
-    h1 {color: rgb(29, 27, 27);}
-    p {color: blue;}
+body {
+    background-color: rgb(238, 204, 209);
+}
+
+h1 {
+    color: rgb(146, 37, 110);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    color: rgb(78, 4, 60);
+}
 
 
-    h1 {
-        color: rgb(102, 69, 91);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 50px;
-        
-    }
+h1 {
+    color: rgb(102, 69, 91);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
 
-.circle {
-background-color: azure;
 
-    }
+}
+.main-div {
+    display: flex;
+    height: 85vh;
+}
+.left-content-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: black 2px solid;
+}
+
+
+.right-content-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: black 2px;
+    padding-left: 2%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: black 2px solid;
+}
