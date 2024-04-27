@@ -46,9 +46,5 @@ darkModeToggle.addEventListener('click', () => {
 
 })
 
-
-
-
-
-
+//Gather all necessary query selectors for user inputs and submit button.
 
