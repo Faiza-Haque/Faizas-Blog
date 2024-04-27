@@ -1,10 +1,22 @@
 .darkMode {
-background-color: grey;
+background-color: rgb(29, 28, 28);
 
 
 }
 
-body {background-color:  lightyellow;}
+body {background-color:  rgb(238, 204, 209);}
     h1 {color: rgb(29, 27, 27);}
     p {color: blue;}
 
+
+    h1 {
+        color: rgb(102, 69, 91);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        
+    }
+
+.circle {
+background-color: azure;
+
+    }
