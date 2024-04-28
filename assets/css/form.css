@@ -35,7 +35,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content:center;
-    border-right:  black 2px solid;
     padding-left: 2%;
 }
 
