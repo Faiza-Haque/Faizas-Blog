@@ -4,7 +4,7 @@
 header {
     display: flex;
     justify-content: center;
-    border-bottom: black 6px solid;
+    border-bottom: black 4px solid;
   }
   
   /* A button container is used to ensure the buttons position correctly in the website's header. */
@@ -23,7 +23,7 @@ header {
     }
   
   ul {
-    border: 5px black solid;
+    border: 4px black solid;
     padding: 1em;
     margin: 1em 0;
   }

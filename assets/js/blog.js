@@ -1,9 +1,8 @@
-// Javascript logic for the blog.html (blog entries) page.
+// Javascript LOGIC for all the blog entries that are stored in local storage.
 
-// Gather all necessary query selectors for the blog container, back button and dark mode toggle button.
+// Gather all necessary query selectors for the blog container, back button.
 const blogContainer = document.querySelector('#blog-container');
 const backButton = document.querySelector('#back-button');
-const toggleButton = document.getElementById('toggleButton');
 
 
 // On page load, prevent default behaviour then load all existing blog entries, assign them to a variable and flatten them to a string. 
@@ -42,7 +41,7 @@ window.addEventListener('load', function (event) {
     ul.appendChild(li3);
     ul.appendChild(li);
 }
-// We then set the local storage of these new blogs.
+// This will set all new entries to local storage
 localStorage.setItem('blogEntry', JSON.stringify(blogParse));
  
 });
@@ -52,9 +51,3 @@ backButton.addEventListener('click', function() {
   window.location.href="./index.html";
 });
 
-// Hitting the 'toggleButton' will change the body's style element to 'dark-mode'. 
-// Check out the 'Styles.css' file for specific styles for each dark-mode element. 
-toggleButton.addEventListener('click', function() {
-  let element = document.body;
-    element.classList.toggle("dark-mode");
-});

@@ -1,0 +1,26 @@
+darkMode {
+    background-color: rgb(29, 28, 28);
+
+}
+
+body {
+    background-color: rgb(238, 204, 209);
+}
+
+h1 {
+    color: rgb(146, 37, 110);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    color: rgb(78, 4, 60);
+}
+
+
+h1 {
+    color: rgb(102, 69, 91);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+
+
+}
