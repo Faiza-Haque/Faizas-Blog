@@ -9,28 +9,28 @@ const backButton = document.querySelector('#back-button');
 window.addEventListener('load', function (event) {
   event.preventDefault();
   
-  let blogParse = JSON.parse(localStorage.getItem('blogEntry'));
+  let userObjects = JSON.parse(localStorage.getItem('userinfo'));
 
   // Loop through all existing blog entries stored in local storage and push them to the array. 
-  for(let i = 0; i < blogParse.length; i++) {
+  for(let i = 0; i < userObjects.length; i++) {
 
-    const item = blogParse[i];
+    const userObject = userObjects[i];
 
     //Then, we assign each existing blog item to its own variable to then be appended to its own HTML element.
     const ul = document.createElement('ul');
 
     const li = document.createElement('li');
-    li.textContent = 'Posted by: ' + item.title;
+    li.textContent = 'Posted by: ' + userObject.Title;
     li.setAttribute('data-index', i);
 
     const hr = document.createElement('hr');
 
     const li2 = document.createElement('li');
-    li2.textContent = item.content;
+    li2.textContent = userObject.Content;
     li2.setAttribute('data-index', i);
 
     const li3 = document.createElement('p');
-    li3.textContent = item.user;
+    li3.textContent = userObject.Username;
     li3.setAttribute('data-index', i);
 
     // We then append each newly created blog item to an unordered list, which is then appended to the blogContainer div element. 
@@ -41,8 +41,8 @@ window.addEventListener('load', function (event) {
     ul.appendChild(li3);
     ul.appendChild(li);
 }
-// This will set all new entries to local storage
-localStorage.setItem('blogEntry', JSON.stringify(blogParse));
+// // This will set all new entries to local storage
+// localStorage.setItem('blogEntry', JSON.stringify(blogParse));
  
 });
 

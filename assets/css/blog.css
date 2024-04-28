@@ -1,4 +1,8 @@
 /* Styles for the blog entries part of the website. */
+.darkMode {
+    background-color: rgb(29, 28, 28);
+
+}
 
 /* A separate header element is used here as the heading is slightly different with buttons. */
 header {
