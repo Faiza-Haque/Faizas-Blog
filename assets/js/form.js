@@ -4,80 +4,64 @@ const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 let array = [];
+let userObject = [
+    {
+    title: '',
+    content: '',
+    user: ''
+}
+]
+  // Load all existing blog entries, assign them to a variable and flatten them to a string. 
+let existingBlogs = JSON.parse(localStorage.getItem('blogEntry'));
+// PLEASE NOTE: this passes an error in the console log if there are no existing blog entries to pull from 
+// (clearing of local storage + like on a fresh page load) as it reads the 'length' as null which is normal. 
+// This means that there is no issue and should be ignored. As soon as a blog entry is added, the error goes away as expected.
 
-  
-  function renderLastRegistered() {
-    const email = localStorage.getItem('username');
-    const title = localStorage.getItem('title');
-    if (!usernameInput || !titleInput) {
-      return;
-    }
-    usernameInput.textContent = usernameInput;
-    titleInput.textContent = titleInput;
-  }
-  submitButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    const usernameInput = usernameInput.value;
-    const titleInput = titleInputInput.value;
-    if (email === '') {
-      displayMessage('error', 'Username cannot be blank');
-    } else if (password === '') {
-      displayMessage('error', 'Password cannot be blank');
-    } else {
-      displayMessage('success', 'Registered successfully');
-      localStorage.setItem('usernameInput', usernameInput);
-      localStorage.setItem('titleInput', titleInput);
-      renderLastRegistered();
-    }
+// On page load, prevent default behaviour and loop through the existing blogs saved in local storage to then be added to the array.
+window.addEventListener('load', function (event) {
+  event.preventDefault();
+
+  // Loop through all existing blog entries stored in local storage and push them to the array. 
+for(let i = 0; i < existingBlogs.length; i++) {
+
+
+  const item = existingBlogs[i];
+
+   array.push({
+    title: item.title,
+    content: item.content,
+    user: item.user
   });
+}
+});
 
 
-
-
-let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelector("#dark-mode-toggle");
-
-//check if dark mode is enabled
-//if it's enabled, turn it off
-// if it's disabled, turn it on
-
-
-
-const enableDarkMode = () => {
-
-    //1.add the class dark mode to the body
-    document.body.classList.add('darkMode');
-    darkMode = "enabled"
-    //2. update darkMode in the localStorage
-    localStorage.setItem('darkMode', 'enabled');
+//This is the local storage part.
+// A function to store blog entries.
+function storeEntries() {
+  localStorage.setItem('blogEntry', JSON.stringify(array));
 }
 
-const disableDarkMode = () => {
+// When we hit the submit button, we first check to see if there are any blank fields. If there are, alert the user saying so. 
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
 
-    //1.add the class dark mode to the body
-    document.body.classList.remove('darkMode');
-    darkMode = "null"
-    //2. update darkMode in the localStorage
-    localStorage.setItem('darkMode', null);
-}
-
-if (darkMode === "enabled") {
-    enableDarkMode();
-}
-
-
-
-darkModeToggle.addEventListener('click', () => {
-    console.log(darkMode)
-    if (darkMode !== "enabled") {
-        enableDarkMode();
-        console.log(darkMode);
+    if (titleInput.value === '' || contentInput.value === '' || usernameInput.value === '') {
+      alert ('Please enter all fields before submitting');
     } else {
 
-        disableDarkMode();
-        console.log(darkMode);
-
-
+      // Then, push all user inputs to the empty array as an object inside the array.
+    array.push({
+      title: usernameInput.value,
+      content: titleInput.value,
+      user: contentInput.value
+    });
+    
+    // Call the store entries function to save all of the entries to local storage. 
+    storeEntries();
+    // Take the user to the 'blog.html' (blog entries) location.
+    window.location.href="./blog.html"
     }
-
-})
+  }
+  );
+  
