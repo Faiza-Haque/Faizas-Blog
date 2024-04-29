@@ -26,5 +26,6 @@ createForm.addEventListener("submit", (event) => {
 
     localStorage.setItem("userinfo", JSON.stringify(userObjects));
   
+    window.location.href="blog.html"
 })
 
