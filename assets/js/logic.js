@@ -9,6 +9,7 @@ const enableDarkMode = () => {
     darkMode = "enabled"
     //2. update darkMode in the localStorage
     localStorage.setItem('darkMode', 'enabled');
+    darkModeToggle.textContent = "🌠"
 }
 const disableDarkMode = () => {
     //1.add the class dark mode to the body
@@ -16,6 +17,7 @@ const disableDarkMode = () => {
     darkMode = "null"
     //2. update darkMode in the localStorage
     localStorage.setItem('darkMode', null);
+    darkModeToggle.textContent = "🌞"
 }
 if (darkMode === "enabled") {
     enableDarkMode();
