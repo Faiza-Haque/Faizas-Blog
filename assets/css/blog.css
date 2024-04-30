@@ -9,38 +9,78 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: black 2px solid;
-  }
-  
-  /* A button container is used to ensure the buttons position correctly in the website's header. */
-  .button-container {
+}
+
+/* A button container is used to ensure the buttons position correctly in the website's header. */
+.button-container {
     display: flex;
     align-items: center;
     padding-right: 3.5em;
     font-size: 3em;
-    }
-  
-  /* Below are the styles for the actual blog entries that are added as appended list 
+}
+
+/* Below are the styles for the actual blog entries that are added as appended list 
   and paragraph elements within an unordered list via Javascript. */
-    #blog-container {
-      padding: 2em;
-      padding-bottom: 4em;
-    }
-  
-  ul {
+#blog-container {
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+ul {
     border: 2px black solid;
     padding: 1em;
     margin: 1em 0;
-  }
-  
-  li {
+}
+
+li {
     list-style-type: none;
     font-weight: bold;
-  }
-  
-  ul p {
+
+}
+
+ul p {
     margin: 0.5em;
     padding-bottom: 0.5em;
     font-style: italic;
-    
-  }
-  
+
+}
+
+/* css for footer*/
+footer {
+    margin: 0 auto;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+footer h5 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 10px 5px;
+}
+
+.panel-footer ul li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    font: size 17px;
+    border: none;
+}
+
+.panel-footer ul li a {
+    color: black;
+    background-color: rgb(238, 204, 209);
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.panel-footer ul {
+    border: 0px;
+
+}

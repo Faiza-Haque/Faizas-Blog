@@ -41,7 +41,7 @@ window.addEventListener('load', function (event) {
 
 
 /// This will set all new entries to local storage
- localStorage.setItem('blogEntry', JSON.stringify(blogParse));
+localStorage.setItem('blogEntry', JSON.stringify(blogParse));
  
 });
 
