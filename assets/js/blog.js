@@ -3,6 +3,7 @@
 // Gather all necessary query selectors for the blog container, back button.
 const blogContainer = document.querySelector('#blog-container');
 const backButton = document.querySelector('#back-button');
+const blogParse = JSON.parse(localStorage.getItem('blogEntry'));
 
 // On page load, prevent default behaviour then load all existing blog entries, assign them to a variable and flatten them to a string.
 window.addEventListener('load', function (event) {
