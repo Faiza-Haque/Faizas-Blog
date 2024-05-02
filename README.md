@@ -7,7 +7,8 @@ In this challenge, you'll create a two-page website where users will input and v
 
 
 ## Screenshot of Project
-![screenshot of hw 2] (./FaizasBlog.png)(./BlogEntries.png)  
+![screenshot of hw 2](./FaizasBlog.png)
+![screenshot of hw 2](./BlogEntries.png)  
 
 **User Story**: 
 AS A marketing student
