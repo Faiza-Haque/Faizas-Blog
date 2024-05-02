@@ -44,6 +44,7 @@ THEN I am presented with a link to the developer's portfolio.
 
 - [youtube video]( https://youtu.be/RiWxhm5ZdFM?si=QAqrC1_olVXs5vUc)
 - [BlackBox] Blackbox code autocomplete is build to make developers faster while writing code. This Machine Learning program helped me with my comments and helped me understand the code I was writing.
+- [W3Schools] W3Schools is a free web resource that provides information about HTML, CSS, and JavaScript. It is a great resource for learning web development.
 
 ## Acknowledgments 
 - Tutors and TAs
